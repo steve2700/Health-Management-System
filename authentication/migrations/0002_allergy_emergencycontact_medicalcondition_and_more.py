@@ -143,13 +143,9 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name="prescription",
             name="quantity",
-            field=models.IntegerField(
-                default=datetime.datetime(
-                    2025, 5, 28, 20, 23, 37, 40909, tzinfo=datetime.timezone.utc
-                )
-            ),
+            field=models.IntegerField(default=1),
             preserve_default=False,
-        ),
+            ),     
         migrations.AddField(
             model_name="prescription",
             name="refill_instructions",
